@@ -2,66 +2,19 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Mail</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-    }
-    header {
-      background: #003d8f;
-      color: white;
-      padding: 12px 20px;
-      font-size: 18px;
-    }
-    iframe {
-      width: 100%;
-      height: calc(100% - 50px);
-      border: none;
-    }
-    .fallback {
-      display: none;
-      text-align: center;
-      padding: 40px;
-    }
-    .fallback a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #003d8f;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 18px;
-    }
-  </style>
+  <title>Weiterleitung…</title>
+
+  <meta http-equiv="refresh" content="0; url=https://mail.ionos.de">
+
+  <script>
+    window.location.replace("https://mail.ionos.de");
+  </script>
 </head>
 <body>
-
-<header>Mail</header>
-
-<iframe
-  src="https://mail.ionos.de"
-  onerror="showFallback()">
-</iframe>
-
-<div class="fallback" id="fallback">
-  <h2>Webmail öffnen</h2>
-  <p>Dein Browser blockiert das Einbetten aus Sicherheitsgründen.</p>
-  <a href="https://mail.ionos.de" target="_blank">
-    Zum IONOS Mailportal
-  </a>
-</div>
-
-<script>
-  function showFallback() {
-    document.querySelector('iframe').style.display = 'none';
-    document.getElementById('fallback').style.display = 'block';
-  }
-</script>
-
+  <p>Weiterleitung zum Mailportal…</p>
+  <p>
+    <a href="https://mail.ionos.de">Hier klicken, falls nichts passiert</a>
+  </p>
 </body>
 </html>
+
